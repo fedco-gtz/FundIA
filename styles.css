@@ -1,0 +1,197 @@
+/* General */
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #05112c;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #05112c;
+    padding: 1rem;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    background-color: #eb0e31;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-family: 'Raleway', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #f9c70c;
+    color: #05112c;
+}
+
+/* Botones */
+button {
+    background-color: #eb0e31;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-top: 1rem;
+    font-family: 'Raleway', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f9c70c;
+    color: #05112c;
+}
+
+/* Secciones */
+h1 {
+    font-family: 'Acme', serif;
+    color: #f9c70c;
+    text-align: center;
+    margin-top: 2rem;
+    text-shadow: 3px 3px rgba(5, 185, 250, 0.6);
+    font-size: 130px;
+}
+
+h2 {
+    color: #f9c70c;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+section {
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.modal-content iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Estilos del contenido */
+.content article {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.content article a img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 15px;
+}
+
+/* Estilo alternado: imagen a la izquierda */
+.content article .left a img {
+    order: 1;
+}
+
+.content article .left p {
+    order: 2;
+    text-align: justify;
+}
+
+/* Estilo alternado: imagen a la derecha */
+.content article .right a img {
+    order: 2;
+}
+
+.content article .right p {
+    order: 1;
+    text-align: justify;
+}
+
+/* Efecto al pasar el cursor por la imagen */
+.content article img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.content article img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Estilos generales del contenedor de imágenes */
+.image-gallery {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Estilos para cada imagen */
+.image-gallery img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Animación al pasar el cursor sobre las imágenes */
+.image-gallery img:hover {
+    transform: scale(1.1); /* Pequeña ampliación */
+    cursor: pointer;
+}

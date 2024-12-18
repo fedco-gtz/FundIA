@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las matemáticas en el universo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#comienzo">EL COMIENZO</a></li>
+                <li><a href="#telescopio">LOS TELESCOPIOS</a></li>
+                <li><a href="#podcast">PODCAST</a></li>
+                <li><a href="sobre-mi.html">SOBRE MI</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Las matemáticas en el universo</h1>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Las matemáticas en el universo es un proyecto que busca explorar cómo las leyes matemáticas subyacen en
+                el funcionamiento y la estructura del cosmos. A través de este enfoque, se abordarán conceptos como las
+                proporciones armónicas presentes en los sistemas planetarios, el papel de las ecuaciones diferenciales
+                en la descripción del movimiento de los astros, y la geometría que define las formas de galaxias,
+                agujeros negros y nebulosas. El proyecto pretende despertar el asombro por la precisión matemática que
+                rige desde los eventos cósmicos más gigantescos hasta las partículas más diminutas, mostrando cómo las
+                matemáticas son el lenguaje universal que conecta todo lo que existe.</p>
+            <button id="explorar-mas">Explorar más</button>
+        </section>
+
+        <!-- Modal -->
+        <div id="videoModal" class="modal">
+            <div class="modal-content">
+                <span class="close"></span>
+                <iframe id="youtube-video" src="" frameborder="0" allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <section id="comienzo">
+            <h2>¿Cómo comenzamos a mirar el universo?</h2>
+            <p>Siempre he creído que las matemáticas son más que una simple herramienta; son una forma de ver el mundo.
+                Me emociona la idea de que los mismos principios matemáticos que gobiernan el movimiento de los planetas
+                también se encuentren en la estructura de una flor o en la espiral de una galaxia. Mi pasión por las
+                matemáticas me impulsa a explorar las conexiones más profundas entre el mundo físico y el mundo
+                abstracto.</p>
+            <p>Para ello, los invito a exprorar los ejes centrales de <b>las matemáticas en el universo</b></p>
+            <button onclick="window.location.href='historico-conceptual.html'">Histórico y conceptual</button>
+            <button onclick="window.location.href='evolucion-tecnologica.html'">La evolución tecnológica</button>
+            <button onclick="window.location.href='matematico-abstracto.html'">Matemático y abstracto</button>
+        </section>
+        <section id="telescopio">
+            <h2>Los telescopios de ayer, hoy y mañana</h2>
+            <p>Los telescopios han recorrido un camino fascinante desde sus primeros días hasta el presente, y continúan
+                evolucionando hacia el futuro.<br>
+                <b> - Ayer:</b> Los primeros telescopios, creados en el siglo XVII por Galileo Galilei y otros
+                científicos, eran simples instrumentos ópticos que permitían observar los cuerpos celestes con una
+                lente. Estos dispositivos eran grandes y rudimentarios, limitados en su capacidad de resolución y
+                precisión.<br>
+                <b> - Hoy:</b> Con la tecnología moderna, los telescopios actuales han avanzado significativamente. Los
+                telescopios actuales utilizan lentes o espejos más grandes y avanzados, así como tecnologías
+                electrónicas y computacionales para procesar datos e imágenes. Los telescopios espaciales como el
+                Hubble, o los terrestres como el Gran Telescopio Canarias, permiten observar el cosmos con una claridad
+                y precisión impresionante, detectando detalles a nivel subatómico.<br>
+                <b> - Mañana:</b> Los telescopios del futuro prometen ser aún más avanzados. La investigación está
+                enfocada en telescopios de próxima generación como el Telescopio Espacial James Webb, que buscará las
+                señales de los primeros sistemas solares y planetas, así como en observatorios terrestres equipados con
+                redes de telescopios interconectados a nivel global para estudios en alta precisión. Además, el
+                desarrollo de tecnologías como la inteligencia artificial ayudará a procesar datos y ampliar las
+                capacidades científicas de estos instrumentos.
+            </p>
+            <div class="image-gallery">
+                <a href="https://meta.ai/s/eKLGdEVDUUiDJGn2/" target="_blank">
+                    <img src="images/imagen15.jpeg" alt="Telescopio antiguo">
+                </a>
+
+                <a href="https://meta.ai/s/s3MUKuAEdDcj5ebm/" target="_blank">
+                    <img src="images/imagen16.jpeg" alt="Telescopio moderno">
+                </a>
+                <a href="https://meta.ai/s/86skvSUZjBzkp1P8/" target="_blank">
+                    <img src="images/imagen17.jpeg" alt="Avance telescópico">
+                </a>
+                <a href="https://meta.ai/s/WxhhosihoQ4yryVT/" target="_blank">
+                    <img src="images/imagen18.jpeg" alt="Telescopio espacial">
+                </a>
+                <a href="https://meta.ai/s/ryTwaTvqQbgmjKMo/" target="_blank">
+                    <img src="images/imagen19.jpeg" alt="Telescopio en uso">
+                </a>
+            </div>
+        </section>
+        <section id="podcast">
+            <h2>PODCAST</h2>
+            <p>Todas las semanas un nuevo episodio</p>
+            <h3>Episodio 1: "Las Matemáticas en el Universo"</h3>
+            <iframe class="murf-embed" width="560" height="315" src="https://murf.ai/embeds/index.html?embedId=m4t9nwrj"
+                allowfullscreen title="Murf Embed Player" style="border: none;"></iframe>
+            <script src="https://murf.ai/embeds/widget.js"></script>
+        </section>
+    </main>
+</body>
+
+<script>
+    // Seleccionar los elementos necesarios
+    const modal = document.getElementById("videoModal");
+    const btn = document.getElementById("explorar-mas");
+    const closeModal = document.querySelector(".close");
+    const youtubeVideo = document.getElementById("youtube-video");
+
+    // Video de YouTube
+    const videoUrl = "https://www.youtube.com/embed/YOUR_VIDEO_ID";
+
+    // Abrir el modal y cargar el video
+    btn.addEventListener("click", () => {
+        modal.style.display = "flex";
+        youtubeVideo.src = videoUrl;
+    });
+
+    // Cerrar el modal y detener el video
+    closeModal.addEventListener("click", () => {
+        modal.style.display = "none";
+        youtubeVideo.src = "";
+    });
+
+    // Cerrar el modal al hacer clic fuera del contenido
+    window.addEventListener("click", (event) => {
+        if (event.target === modal) {
+            modal.style.display = "none";
+            youtubeVideo.src = "";
+        }
+    });
+</script>
+
+</html>
